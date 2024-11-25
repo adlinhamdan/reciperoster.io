@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe Roster - Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css" />
+    <link href='https://fonts.googleapis.com/css?family=Itim' rel='stylesheet'>
+  </head>
+  <body>
+    <header class="header">
+        <a href="index.html"><img src="website_icon.png" alt="cat at market" width="80" height="80"></a>
+        
+        <nav>
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="recipes.html">Recipes</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+          </ul>
+        </nav>
+      </header>
+    <main>
+      <section class="shopping-list">
+        <h1>Shopping List</h1>
+        <ul id="shopping-list">
+          <!-- Ingredients added from recipes will appear here -->
+        </ul>
+        <div class="shopping-list-buttons">
+          <button id="download-list">Download as PDF</button>
+          <button id="reset-list">Reset List</button>
+        </div>
+      </section>
+    </main>
+    <script src="dashboard.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+  </body>
+</html>

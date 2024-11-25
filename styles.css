@@ -1,0 +1,219 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styling */
+  body {
+    font-family: 'Itim';
+    font-size: 22px;
+    background-color: #f5f5ff;
+    color: #333;
+  }
+  
+  /* Header */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 27px;
+    padding: 20px 10%;
+    background-color: #ff6f61;
+    color: white;
+  }
+  
+  .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: #ffcccb;
+  }
+  
+  /* Recipe Gallery */
+  .recipe-gallery {
+    display: flex;
+    gap: 20px;
+    padding: 30px 10%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  /* Recipe Card */
+  .recipe-card {
+    width: 300px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    text-align: left;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Card Hover Effect */
+  .recipe-card:hover {
+    transform: translateY(-10px);
+    z-index: 5;
+  }
+  
+  /* Image Placeholder */
+  .image-placeholder {
+    width: 100%;
+    height: 150px;
+    background-color: #ddd;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  
+  /* Recipe Info */
+  h3 {
+    font-size: 1.5rem;
+    color: #ff6f61;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    margin-bottom: 8px;
+  }
+  
+  /* Card Footer */
+  .card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+    position: relative;
+  }
+  
+  /* Action Icon */
+  .action-icon {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    position: relative;
+  }
+  
+  .action-icon:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Tooltip Wrapper */
+  .tooltip-wrapper {
+    position: relative;
+  }
+  
+  /* Tooltip Text */
+  .tooltip-text {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    text-align: center;
+    white-space: nowrap;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    z-index: 10;
+  
+    /* Position relative to icon */
+    top: -34px; /* Above the icon */
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  /* Show Tooltip on Hover */
+  .tooltip-wrapper:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(-50%) translateY(-5px); /* Slight upward shift */
+  }
+  
+  /* Introduction Section */
+.introduction-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px 10%;
+    margin-top: 180px;
+  }
+  
+  .intro-text {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .intro-text h1 {
+    font-family: 'Itim', sans-serif;
+    font-size: 2.5rem;
+    color: #ff6f61;
+    margin-bottom: 20px;
+  }
+  
+  .intro-text p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+  }
+  
+  .intro-image {
+    flex: 1;
+    min-width: 300px;
+    text-align: center;
+  }
+  
+  .intro-image img {
+    max-width: 100%;
+    border-radius: 8px;
+  }
+
+  /* Malaysian Food Section */
+.malaysian-food {
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px;
+  }
+  
+  .malaysian-food img {
+    max-width: 100%;
+    border-radius: 8px;
+  }
+  
+  .malaysian-food h2 {
+    font-family: 'Itim', sans-serif;
+    font-size: 2rem;
+    color: #ff6f61;
+    margin-bottom: 20px;
+  }
+  
+  .malaysian-food p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+  }

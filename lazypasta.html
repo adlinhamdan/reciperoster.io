@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lazy Pasta Recipe</title>
+    <link rel="stylesheet" href="recipe.css" />
+    <link href='https://fonts.googleapis.com/css?family=Itim' rel='stylesheet'>
+  </head>
+  <body>
+    <header class="header">
+        <a href="index.html"><img src="website_icon.png" alt="cat at market" width="80" height="80"></a>
+        
+        <nav>
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="recipes.html">Recipes</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+          </ul>
+        </nav>
+      </header>
+
+    <main class="recipe-details">
+      <div class="back-link">
+        <a href="recipes.html">← All Recipes</a>
+      </div>
+      <div class="recipe-container">
+        <div class="recipe-left">
+          <div class="image-placeholder">
+            <img src="lazypasta.jpg" width="300" height="200" >
+          </div>
+          <h1>Lazy Pasta (1 Serving)</h1>
+        </div>
+        <div class="recipe-right">
+          <h2>Ingredients:</h2>
+          <ul>
+            <li>
+              <input
+                type="checkbox"
+                class="ingredient-checkbox"
+                value="garlic cloves"
+              />
+              3–4 garlic cloves (more if you like it garlicky)
+            </li>
+            <li>
+              <input
+                type="checkbox"
+                class="ingredient-checkbox"
+                value="olive oil"
+              />
+              2 tablespoons olive oil
+            </li>
+            <li>
+              <input
+                type="checkbox"
+                class="ingredient-checkbox"
+                value="butter"
+              />
+              1 tablespoon butter
+            </li>
+            <li>
+              <input
+                type="checkbox"
+                class="ingredient-checkbox"
+                value="grated Parmesan cheese"
+              />
+              ¼ cup grated Parmesan cheese (or more, to taste)
+            </li>
+            <li>
+              <input
+                type="checkbox"
+                class="ingredient-checkbox"
+                value="black pepper"
+              />
+              ½ teaspoon black pepper (adjust to taste)
+            </li>
+            <li>
+              <input
+                type="checkbox"
+                class="ingredient-checkbox"
+                value="crushed red pepper flakes"
+              />
+              ¼ teaspoon crushed red pepper flakes (optional, for heat)
+            </li>
+            <li>
+              <input
+                type="checkbox"
+                class="ingredient-checkbox"
+                value="spaghetti or any pasta of your choice"
+              />
+              100g (about 3.5 oz) spaghetti or any pasta of your choice
+            </li>
+            <li>
+              <input type="checkbox" class="ingredient-checkbox" value="Salt" />
+              Salt (for pasta water and seasoning)
+            </li>
+          </ul>
+          <button id="add-to-shopping-list">Add to Shopping List</button>
+        </div>
+      </div>
+      <!-- Instructions Card -->
+      <section>
+        <div class="instructions-card">
+          <button class="collapse-btn" onclick="toggleInstructions()">
+            View Instructions
+          </button>
+          <div class="instructions-content">
+            <h2>Instructions</h2>
+            <ol>
+                <li>
+                  <strong>Prepare the Garlic Confit:</strong> Peel and thinly slice
+                  3–4 garlic cloves. In a small pan, heat 2 tablespoons olive oil over
+                  low heat. Add the garlic and cook slowly until it turns golden and
+                  fragrant, about 5–7 minutes. Be careful not to burn the garlic.
+                  Remove from heat and set aside.
+                </li>
+                <li>
+                  <strong>Cook the Pasta:</strong> Bring a pot of salted water to a
+                  boil. Add 100g spaghetti and cook until just al dente, according to
+                  the package instructions.
+                </li>
+                <li>
+                  <strong>Prepare the Sauce Base:</strong> While the pasta cooks, mix
+                  the following in a large heat-safe bowl:
+                  <ul>
+                    <li>1 tablespoon butter (let it soften or melt)</li>
+                    <li>¼ cup grated Parmesan cheese</li>
+                    <li>½ teaspoon black pepper</li>
+                    <li>¼ teaspoon crushed red pepper flakes (optional)</li>
+                  </ul>
+                </li>
+                <li>
+                  <strong>Combine Everything:</strong>Once the pasta is done, reserve
+                  a small cup of pasta water and drain the rest. Do not rinse the
+                  pasta; leave it slightly wet. Add the hot pasta directly to the bowl
+                  with the sauce base. Pour the garlic confit (along with the oil)
+                  over the pasta.
+                </li>
+                <li>
+                  <strong>Mix and Adjust:</strong> Toss everything together until the
+                  butter melts, the cheese coats the pasta, and the ingredients are
+                  well combined. Add a splash of reserved pasta water if needed to
+                  create a silky sauce. Adjust salt and seasoning to taste.
+                </li>
+                <li>
+                  <strong>Serve and Enjoy:</strong> Serve immediately, with extra
+                  Parmesan on top if desired.
+                </li>
+              </ol>
+          </div>
+        </div>
+      </section>
+      <!-- Comments Section -->
+      <section>
+        <div class="comments-section">
+          <h2>Rate and Comment</h2>
+          <form id="comment-form">
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" required />
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" required />
+            <label for="rating">Rating:</label>
+            <select id="rating" required>
+              <option value="" disabled selected>Select</option>
+              <option value="1">1 Star</option>
+              <option value="2">2 Stars</option>
+              <option value="3">3 Stars</option>
+              <option value="4">4 Stars</option>
+              <option value="5">5 Stars</option>
+            </select>
+            <textarea
+              id="comment"
+              placeholder="Your comment..."
+              required
+            ></textarea>
+            <section>
+              <button type="submit">Submit</button>
+            </section>
+          </form>
+          <div class="comments-list">
+            <ul id="comments-container"></ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

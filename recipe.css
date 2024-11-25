@@ -1,0 +1,301 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styling */
+  body {
+    font-family: 'Itim';
+    font-size: 22px;
+    background-color: #f5f5ff;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  section {
+    align-items: center;
+    font-family: 'Itim';
+  }
+  
+  /* Header */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background-color: #ff6f61;
+    color: white;
+  }
+  
+  .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #ffcccb;
+  }
+  
+  /* Back Link */
+  .back-link a {
+    display: inline-block;
+    margin: 20px 10%;
+    text-decoration: none;
+    color: #ff6f61;
+    font-weight: bold;
+  }
+  
+  .back-link a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Recipe Details Section */
+  .recipe-details {
+    padding: 20px 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  /* Recipe Container */
+  .recipe-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .recipe-left {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .image-placeholder {
+    width: 100%;
+    max-width: 300px;
+    height: 200px;
+    background-color: #ddd;
+    border-radius: 8px;
+    margin: 0 auto 20px;
+  }
+  
+  .recipe-left h1 {
+    font-size: 2rem;
+    color: #ff6f61;
+    margin-top: 10px;
+  }
+  
+  /* Ingredients Section */
+  .recipe-right {
+    flex: 1;
+  }
+  
+  .recipe-right h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .recipe-right ul {
+    list-style: disc inside;
+  }
+  
+  .recipe-right ul li {
+    margin-bottom: 10px;
+    line-height: 1.5;
+  }
+  
+  /* Instructions Section */
+  .instructions {
+    margin: 20px 10%;
+  }
+  
+  .instructions h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .instructions p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  /* Rating Section */
+  .rating-section {
+    margin: 20px 10%;
+    text-align: center;
+  }
+  
+  .rating-options {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px 0;
+  }
+  
+  .star {
+    font-size: 2rem;
+    color: #ddd;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .star:hover,
+  .star.selected {
+    color: #ffcc00;
+  }
+  
+  .rating-message {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  /* Comments Section */
+  .comments-section {
+    margin: 20px 10%;
+  }
+  
+  .comments-section textarea {
+    width: 100%;
+    max-width: 600px;
+    height: 80px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .comment-options {
+    margin: 10px 0;
+  }
+  
+  .comments-section button {
+    padding: 10px 20px;
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 10px;
+  }
+  
+  .comments-section button:hover {
+    background-color: #ff856f;
+  }
+  
+  .comments-list ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .comments-list li {
+    background: #fff;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .comments-list li .comment-type {
+    font-size: 0.9rem;
+    color: #999;
+  }
+  
+  /* Instructions Card */
+  .instructions-card {
+    margin-top: 30px; /* Keep it visually separated from the above section */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  /* Ensure the container keeps buttons aligned at the bottom */
+  .instructions-button-container {
+    margin-top: 20px; /* Adds space between the list and buttons */
+    text-align: left; /* Aligns buttons to the left */
+  }
+  
+  .instructions-button-container button {
+    display: inline-block; /* Buttons appear inline */
+    margin-right: 10px; /* Adds spacing between buttons */
+    padding: 10px 20px;
+    background-color: #ff6f61;
+    color: white;
+    font-family: 'Itim';
+    border: none;
+    font-family: 'Itim';
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .instructions-button-container button:hover {
+    background-color: #ff856f;
+  }
+  
+  .collapse-btn {
+    font-family: 'Itim';
+    width: 100%;
+    padding: 10px 15px;
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: left;
+    transition: background-color 0.3s ease;
+  }
+  
+  .collapse-btn:hover {
+    background-color: #ff856f;
+  }
+  
+  .instructions-content {
+    font-family: 'Itim';
+    display: none; /* Initially hidden */
+    padding: 15px;
+    background-color: #fff;
+    color: #333;
+  }
+  
+  .instructions-content h2 {
+    font-family: 'Itim';
+    font-size: 1.5rem;
+    color: #ff6f61;
+    margin-bottom: 10px;
+  }
+  
+  .instructions-content ol {
+    font-family: 'Itim';
+    margin-left: 20px;
+    list-style: decimal;
+    line-height: 1.8;
+  }
+  
+  .instructions-content ul {
+    font-family: 'Itim';
+    margin-left: 20px;
+    list-style: disc;
+    line-height: 1.8;
+  }
+  

@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lazy Pasta Recipe</title>
+    <link rel="stylesheet" href="recipe.css" />
+    <link href='https://fonts.googleapis.com/css?family=Itim' rel='stylesheet'>
+  </head>
+  <body>
+    <header class="header">
+        <a href="index.html"><img src="website_icon.png" alt="cat at market" width="80" height="80"></a>
+        
+        <nav>
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="recipes.html">Recipes</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+          </ul>
+        </nav>
+      </header>
+
+    <main class="recipe-details">
+      <div class="back-link">
+        <a href="recipes.html">← All Recipes</a>
+      </div>
+      <div class="recipe-container">
+        <div class="recipe-left">
+          <div class="image-placeholder">
+            <img src="chicken.jpg" width="300" height="200" >
+          </div>
+          <h1>Chicken with White Sauce (2 Servings)</h1>
+        </div>
+        <div class="recipe-right">
+          <h2>Ingredients:</h2>
+          <h3>For the batter:</h3>
+          <p>
+            (Alternatively, use 1 packet of instant batter mix from an Asian
+            store)
+          </p>
+          <ul>
+            <li>
+              <input
+                type="checkbox"
+                class="ingredient-checkbox"
+                value="boneless chicken thighs or chicken breasts "
+              />
+              2 boneless chicken thighs or chicken breasts (about 250g), cut
+              into bite-sized pieces
+            </li>
+            <li>
+              <input
+                type="checkbox"
+                class="ingredient-checkbox"
+                value="cornstarch"
+              />
+              2 tablespoons cornstarch
+            </li>
+            <li>
+              <input type="checkbox" class="ingredient-checkbox" value="egg" />
+              1 egg
+            </li>
+            <li>
+              <input
+                type="checkbox"
+                class="ingredient-checkbox"
+                value="white pepper"
+              />
+              ¼ teaspoon white pepper
+            </li>
+            <li>
+              <input
+                type="checkbox"
+                class="ingredient-checkbox"
+                value="Chinese five-spice powder"
+              />
+              ¼ teaspoon Chinese five-spice powder
+            </li>
+            <li>
+              <input
+                type="checkbox"
+                class="ingredient-checkbox"
+                value="black pepper"
+              />
+              ¼ teaspoon black pepper
+            </li>
+            <li>
+              <input
+                type="checkbox"
+                class="ingredient-checkbox"
+                value="garlic powder"
+              />
+              ½ teaspoon garlic powder
+            </li>
+            <li>
+              <input
+                type="checkbox"
+                class="ingredient-checkbox"
+                value="onion powder"
+              />
+              ½ teaspoon onion powder
+            </li>
+            <li>
+              <input
+                type="checkbox"
+                class="ingredient-checkbox"
+                value="instant batter mix"
+              />
+              Optional: instant batter mix
+            </li>
+          </ul>
+          <h3>For the White Sauce:</h3>
+          <ul>
+            <li>
+              <input
+                type="checkbox"
+                class="ingredient-checkbox"
+                value="Thai chilies "
+              />
+              2–3 Thai chilies, finely chopped (adjust for heat preference)
+            </li>
+            <li>
+              <input
+                type="checkbox"
+                class="ingredient-checkbox"
+                value="curry leaves"
+              />
+              6–8 curry leaves
+            </li>
+            <li>
+              <input
+                type="checkbox"
+                class="ingredient-checkbox"
+                value="butter"
+              />
+              2 tablespoons butter
+            </li>
+            <li>
+              <input
+                type="checkbox"
+                class="ingredient-checkbox"
+                value="evaporated milk"
+              />
+              ½ cup evaporated milk
+            </li>
+            <li>
+              <input
+                type="checkbox"
+                class="ingredient-checkbox"
+                value="grated Parmesan cheese"
+              />
+              2 tablespoons grated Parmesan cheese (or more to taste)
+            </li>
+            <li>
+              <input type="checkbox" class="ingredient-checkbox" value="MSG" />
+              ¼ teaspoon MSG (optional)
+            </li>
+            <li>
+              <input
+                type="checkbox"
+                class="ingredient-checkbox"
+                value="garlic"
+              />
+              2 garlic cloves, minced
+            </li>
+          </ul>
+          <button id="add-to-shopping-list">Add to Shopping List</button>
+        </div>
+      </div>
+
+      <!-- Instructions Card -->
+      <section>
+        <div class="instructions-card">
+          <button class="collapse-btn" onclick="toggleInstructions()">
+            View Instructions
+          </button>
+          <div class="instructions-content">
+            <h2>Instructions</h2>
+            <ol>
+              <li>
+                <strong>Prepare the Chicken:</strong> In a mixing bowl, combine
+                cornstarch, egg, white pepper, five-spice powder, black pepper,
+                garlic powder, and onion powder. Mix to create a batter. Add the
+                chicken pieces to the batter, ensuring they’re well coated. Set
+                aside for at least 10 minutes to marinate.
+              </li>
+              <li>
+                <strong>Cook the Chicken:</strong>
+                <ul>
+                  <li>Heat oil in a deep pan or wok over medium heat.</li>
+                  <li>
+                    Fry the chicken pieces in batches until golden brown and
+                    cooked through, about 4–5 minutes per batch. Remove and set
+                    aside on a paper towel to drain excess oil.
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <strong>Make the White Sauce:</strong>
+                <ul>
+                  <li>
+                    In a clean pan or wok, melt the butter over medium heat.
+                  </li>
+                  <li>
+                    Add the minced garlic and cook until fragrant, about 30
+                    seconds.
+                  </li>
+                  <li>
+                    Toss in the Thai chilies and curry leaves, letting them
+                    sizzle for 1–2 minutes.
+                  </li>
+                  <li>
+                    Pour in the evaporated milk and bring to a gentle simmer.
+                  </li>
+                  <li>
+                    Stir in the Parmesan cheese and MSG (if using) until the
+                    cheese melts and the sauce thickens slightly.
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <strong>Combine:</strong>
+                <ul>
+                  <li>
+                    Add the fried chicken to the white sauce and toss to coat
+                    evenly.
+                  </li>
+                  <li>
+                    Simmer for another minute to allow the flavors to meld.
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <strong>Serve and Enjoy:</strong> Plate the chicken with the
+                sauce and serve hot. Garnish with extra curry leaves or chilies
+                for presentation, if desired.
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <!-- Comments Section -->
+      <section>
+        <div class="comments-section">
+          <h2>Rate and Comment</h2>
+          <form id="comment-form">
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" required />
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" required />
+            <label for="rating">Rating:</label>
+            <select id="rating" required>
+              <option value="" disabled selected>Select</option>
+              <option value="1">1 Star</option>
+              <option value="2">2 Stars</option>
+              <option value="3">3 Stars</option>
+              <option value="4">4 Stars</option>
+              <option value="5">5 Stars</option>
+            </select>
+            <textarea
+              id="comment"
+              placeholder="Your comment..."
+              required
+            ></textarea>
+            <section>
+              <button type="submit">Submit</button>
+            </section>
+          </form>
+          <div class="comments-list">
+            <ul id="comments-container"></ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

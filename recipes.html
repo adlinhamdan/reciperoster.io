@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adeline's Kitchen - Recipes</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href='https://fonts.googleapis.com/css?family=Itim' rel='stylesheet'>
+  </head>
+  <body>
+    <header class="header">
+        <a href="index.html"><img src="website_icon.png" alt="cat at market" width="80" height="80"></a>
+        
+        <nav>
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="recipes.html">Recipes</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+          </ul>
+        </nav>
+      </header>
+
+    <main class="recipe-gallery">
+      <!-- Card 1 -->
+      <div class="recipe-gallery">
+        <a href="lazypasta.html" class="recipe-link">
+          <div class="recipe-card" data-id="lazy-pasta">
+            <div class="image-placeholder">
+                <img src="lazypasta.jpg" width="270" height="170" >
+            </div>
+            <h3>Lazy Pasta</h3>
+            <p>⏱ 15-20 minutes</p>
+            <p>8 Ingredients</p>
+            <p>1 serving</p>
+            <div class="card-footer">
+              <p>⭐ 4.2/5</p>
+              <div class="tooltip-wrapper">
+                <img
+                  src="mark-as-tried-placeholder.png"
+                  class="action-icon tried-icon"
+                  alt="Mark as Tried"
+                  data-tooltip="Mark as Tried"
+                  onclick="markAsTried(this, event)"
+                />
+                <div class="tooltip-text">Mark as Tried</div>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a href="chickenwithwhitesauce.html" class="recipe-link">
+          <div class="recipe-card" data-id="chicken-white-sauce">
+            <div class="image-placeholder">
+                <img src="chicken.jpg" width="270" height="170" >
+            </div>
+            <h3>Chicken with White Sauce</h3>
+            <p>⏱ 15-20 minutes</p>
+            <p>15 Ingredients</p>
+            <p>2 servings</p>
+            <div class="card-footer">
+              <p>⭐ 4.5/5</p>
+              <div class="tooltip-wrapper">
+                <img
+                  src="mark-as-tried-placeholder.png"
+                  class="action-icon tried-icon"
+                  alt="Mark as Tried"
+                  data-tooltip="Mark as Tried"
+                  onclick="markAsTried(this, event)"
+                />
+                <div class="tooltip-text">Mark as Tried</div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
